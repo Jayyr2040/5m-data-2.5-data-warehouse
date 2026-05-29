@@ -1,0 +1,155 @@
+[0m18:34:01.970640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f348fe8f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f34a4cdd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f348fe1a10>]}
+
+
+============================== 18:34:01.984073 | 6afe3826-0eba-4339-bc55-69ce9af572a1 ==============================
+[0m18:34:01.984073 [info ] [MainThread]: Running with dbt=1.10.9
+[0m18:34:01.986402 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/taijl/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init my_dbt_test', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:34:02.055789 [info ] [MainThread]: Creating dbt configuration folder at /home/taijl/.dbt
+[0m18:34:02.069113 [debug] [MainThread]: Starter project path: /home/taijl/miniconda/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m18:34:02.408499 [info ] [MainThread]: 
+Your new dbt project "my_dbt_test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:34:02.410542 [info ] [MainThread]: Setting up your profile.
+[0m18:36:23.436913 [info ] [MainThread]: Profile my_dbt_test written to /home/taijl/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:36:23.460124 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 141.61569, "process_in_blocks": "143272", "process_kernel_time": 31.90284, "process_mem_max_rss": "375336", "process_out_blocks": "32", "process_user_time": 19.046593}
+[0m18:36:23.464836 [debug] [MainThread]: Command `dbt init` succeeded at 18:36:23.463789 after 141.63 seconds
+[0m18:36:23.472130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f3490226d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f34d9b80d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f3493482d0>]}
+[0m18:36:23.475075 [debug] [MainThread]: Flushing usage events
+[0m18:36:25.643909 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:36:39.855730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a1c8654590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a1c8297a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a1c8654510>]}
+
+
+============================== 18:36:39.861483 | e0bec5ba-6aa0-41b3-99f1-c0304549fad2 ==============================
+[0m18:36:39.861483 [info ] [MainThread]: Running with dbt=1.10.9
+[0m18:36:39.863385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/taijl/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:36:39.906755 [info ] [MainThread]: dbt version: 1.10.9
+[0m18:36:39.910004 [info ] [MainThread]: python version: 3.11.14
+[0m18:36:39.912444 [info ] [MainThread]: python path: /home/taijl/miniconda/envs/elt/bin/python
+[0m18:36:39.915004 [info ] [MainThread]: os info: Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[0m18:37:03.577882 [info ] [MainThread]: Using profiles dir at /home/taijl/.dbt
+[0m18:37:03.579717 [info ] [MainThread]: Using profiles.yml file at /home/taijl/.dbt/profiles.yml
+[0m18:37:03.581494 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/taiji/DS2026/S2_Big_Data/5m-data-2.5-data-warehouse/dbt_project.yml
+[0m18:37:03.583228 [info ] [MainThread]: adapter type: bigquery
+[0m18:37:03.586369 [info ] [MainThread]: adapter version: 1.10.3
+[0m18:37:03.590229 [info ] [MainThread]: Configuration:
+[0m18:37:03.592302 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:37:03.594134 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:37:03.596231 [info ] [MainThread]: Required dependencies:
+[0m18:37:03.598789 [debug] [MainThread]: Executing "git --help"
+[0m18:37:03.610213 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:37:03.612763 [debug] [MainThread]: STDERR: "b''"
+[0m18:37:03.615129 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:37:03.617176 [info ] [MainThread]: Connection:
+[0m18:37:03.620249 [info ] [MainThread]:   method: oauth
+[0m18:37:03.622838 [info ] [MainThread]:   database: project-8d552288-1acb-4a23-893
+[0m18:37:03.624772 [info ] [MainThread]:   execution_project: project-8d552288-1acb-4a23-893
+[0m18:37:03.626658 [info ] [MainThread]:   schema: my_dbt_test
+[0m18:37:03.629372 [info ] [MainThread]:   location: US
+[0m18:37:03.631559 [info ] [MainThread]:   priority: interactive
+[0m18:37:03.634349 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:37:03.637133 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:37:03.639155 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:37:03.640939 [info ] [MainThread]:   job_retries: 1
+[0m18:37:03.643040 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:37:03.646771 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:37:03.650125 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:37:03.652838 [info ] [MainThread]:   client_id: None
+[0m18:37:03.655875 [info ] [MainThread]:   token_uri: None
+[0m18:37:03.658394 [info ] [MainThread]:   compute_region: None
+[0m18:37:03.661379 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:37:03.665760 [info ] [MainThread]:   gcs_bucket: None
+[0m18:37:03.668334 [info ] [MainThread]:   dataproc_batch: None
+[0m18:37:03.670555 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m18:37:04.211984 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:37:04.214450 [debug] [MainThread]: On debug: select 1 as id
+[0m18:37:04.217052 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:09.790679 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=project-8d552288-1acb-4a23-893&j=bq:US:07439728-92d5-40a3-b8c4-c2115f808753&page=queryresults
+[0m18:37:11.325931 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:37:11.328085 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:37:11.330092 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/c/Users/taiji/DS2026/S2_Big_Data/5m-data-2.5-data-warehouse/dbt_project.yml> not found
+
+[0m18:37:11.333293 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 31.593813, "process_in_blocks": "24808", "process_kernel_time": 15.062876, "process_mem_max_rss": "382148", "process_out_blocks": "8", "process_user_time": 13.623354}
+[0m18:37:11.335927 [debug] [MainThread]: Command `dbt debug` failed at 18:37:11.335637 after 31.60 seconds
+[0m18:37:11.337832 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:37:11.339664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a1ccd0c090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a16acf75d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76a1c832d890>]}
+[0m18:37:11.341486 [debug] [MainThread]: Flushing usage events
+[0m18:37:13.327130 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:37:24.003927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0ffdc24710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0ffdc247d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0ffd8bdf50>]}
+
+
+============================== 08:37:24.014242 | cc392737-ca04-4c5f-97c0-5a34190875aa ==============================
+[0m08:37:24.014242 [info ] [MainThread]: Running with dbt=1.10.9
+[0m08:37:24.016063 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/taijl/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init austin_bikeshare_demo', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:37:24.062390 [debug] [MainThread]: Starter project path: /home/taijl/miniconda/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m08:37:24.363075 [info ] [MainThread]: 
+Your new dbt project "austin_bikeshare_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:37:24.365652 [info ] [MainThread]: Setting up your profile.
+[0m08:40:53.598914 [info ] [MainThread]: Profile austin_bikeshare_demo written to /home/taijl/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:40:53.693876 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 209.78516, "process_in_blocks": "434616", "process_kernel_time": 13.043861, "process_mem_max_rss": "375004", "process_out_blocks": "8", "process_user_time": 13.967001}
+[0m08:40:53.781843 [debug] [MainThread]: Command `dbt init` succeeded at 08:40:53.778157 after 209.89 seconds
+[0m08:40:53.805877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0ffd8fecd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d10022fc090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0ffd87ea90>]}
+[0m08:40:53.824154 [debug] [MainThread]: Flushing usage events
+[0m08:40:56.126325 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:48:55.463720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1135aa6a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f113890b910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1135af0bd0>]}
+
+
+============================== 08:48:55.475445 | 076fd992-a4ac-4d6a-b2cb-2cba45247ff3 ==============================
+[0m08:48:55.475445 [info ] [MainThread]: Running with dbt=1.10.9
+[0m08:48:55.477622 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/taijl/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:48:55.512035 [info ] [MainThread]: dbt version: 1.10.9
+[0m08:48:55.515666 [info ] [MainThread]: python version: 3.11.14
+[0m08:48:55.519595 [info ] [MainThread]: python path: /home/taijl/miniconda/envs/elt/bin/python
+[0m08:48:55.523223 [info ] [MainThread]: os info: Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[0m08:49:21.347713 [info ] [MainThread]: Using profiles dir at /home/taijl/.dbt
+[0m08:49:21.349912 [info ] [MainThread]: Using profiles.yml file at /home/taijl/.dbt/profiles.yml
+[0m08:49:21.351648 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/taiji/DS2026/S2_Big_Data/5m-data-2.5-data-warehouse/dbt_project.yml
+[0m08:49:21.353460 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:49:21.355596 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 25.997025, "process_in_blocks": "64", "process_kernel_time": 17.004457, "process_mem_max_rss": "375972", "process_out_blocks": "0", "process_user_time": 14.273233}
+[0m08:49:21.358415 [debug] [MainThread]: Command `dbt debug` failed at 08:49:21.358115 after 26.00 seconds
+[0m08:49:21.360529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1135b1f350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f113a4a3e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1135f531d0>]}
+[0m08:49:21.363612 [debug] [MainThread]: Flushing usage events
+[0m08:49:22.505536 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:42:26.570428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1adaf5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1dba7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1c198c90>]}
+
+
+============================== 11:42:26.581623 | 84a2bb6c-9d66-4975-ae37-48a32fa5d79b ==============================
+[0m11:42:26.581623 [info ] [MainThread]: Running with dbt=1.10.9
+[0m11:42:26.583727 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/taijl/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init austin_bikeshare_demo/', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:57.817512 [info ] [MainThread]: A project called austin_bikeshare_demo already exists here.
+[0m11:42:57.823835 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 31.386454, "process_in_blocks": "304", "process_kernel_time": 1.352891, "process_mem_max_rss": "101624", "process_out_blocks": "0", "process_user_time": 2.304012}
+[0m11:42:57.827638 [debug] [MainThread]: Command `dbt init` succeeded at 11:42:57.827332 after 31.39 seconds
+[0m11:42:57.830680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1f7aff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1f69c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde1ad9f550>]}
+[0m11:42:57.833130 [debug] [MainThread]: Flushing usage events
+[0m11:42:58.922037 [debug] [MainThread]: An error was encountered while trying to flush usage events
